@@ -40,6 +40,7 @@ class ProjectsController < ApplicationController
   # POST /projects
   # POST /projects.json
   def create
+    debugger
     @project = Project.new(params[:project])
 
     respond_to do |format|

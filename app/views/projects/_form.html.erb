@@ -17,6 +17,16 @@
   </div>
 
   <% for task in @project.tasks %>
+<<<<<<< HEAD
+=======
+    <%# This is wrong %>
+    <%#= f.fields_for "project[task_attributes][]" , task do |task_form| %>
+
+    <%# rights was are: %>
+    <%#= f.fields_for "task_attributes[]" , task do |task_form| %>
+    <%#= fields_for "project[task_attributes][]" , task do |task_form| %>
+    <%# choose any of them %>
+>>>>>>> f98a84a918fe72bbc52296741a419616787147e3
     <%= fields_for "project[task_attributes][]" , task do |task_form| %>
       <p>
         Task: <%= task_form.text_field :name %>
