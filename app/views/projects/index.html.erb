@@ -6,7 +6,7 @@
   <h2><%= link_to project.name , project %></h2>
     <ul>
     <% for task in project.tasks %>
-       <li>task.name</li>
+       <li><%= task.name %></li>
      <% end %>   
    </ul>
   <%= link_to 'Edit', edit_project_path(project) %>
