@@ -17,7 +17,14 @@
   </div>
 
   <% for task in @project.tasks %>
-    <%= f.fields_for "project[task_attributes][]" , task do |task_form| %>
+    <%# This is wrong %>
+    <%#= f.fields_for "project[task_attributes][]" , task do |task_form| %>
+
+    <%# rights was are: %>
+    <%#= f.fields_for "task_attributes[]" , task do |task_form| %>
+    <%#= fields_for "project[task_attributes][]" , task do |task_form| %>
+    <%# choose any of them %>
+    <%= fields_for "project[task_attributes][]" , task do |task_form| %>
       <p>
         Task: <%= task_form.text_field :name %>
       </p>
