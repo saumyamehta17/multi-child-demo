@@ -45,7 +45,6 @@ accepts_nested_form provide many options
 ```
 reject_if , allow_destroy , limit etc
 ```
-
 Run `server`
 ```
 rails s 
@@ -53,7 +52,4 @@ rails s
 
 
 
-=======
-sm_rc73
-=======
->>>>>>> 690c9378e15af83b7f083e94888da6bb7b3724d1
+
