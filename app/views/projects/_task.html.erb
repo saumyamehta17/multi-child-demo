@@ -1,0 +1,8 @@
+<%= fields_for "project[task_attributes][]" , task do |task_form| %>
+  <p>
+    Task: <%= task_form.text_field :name %>
+  </p>
+<% end %>
+
+  
+

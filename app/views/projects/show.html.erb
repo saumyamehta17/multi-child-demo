@@ -5,10 +5,11 @@
   <%= @project.name %>
 </p>
 
-<p>
-  
-</p>
-
+<ul>
+  <% for task in @project.tasks %>
+     <li><%= task.name %></li>
+   <% end %>   
+ </ul>
 
 <%= link_to 'Edit', edit_project_path(@project) %> |
 <%= link_to 'Back', projects_path %>

@@ -1,40 +1,36 @@
-<%= form_for(@project) do |f| %>
+<%= nested_form_for(@project) do |f| %>
   <% if @project.errors.any? %>
     <div id="error_explanation">
-      <h2><%= pluralize(@project.errors.count, "error") %> prohibited this project from being saved:</h2>
+      <h2><%= pluralize(@project.errors.count, "error") %> prohibited  this project from being saved:</h2>
 
       <ul>
-      <% @project.errors.full_messages.each do |msg| %>
-        <li><%= msg %></li>
-      <% end %>
+        <% @project.errors.full_messages.each do |msg| %>
+          <li><%= msg %></li>
+        <% end %>
       </ul>
     </div>
   <% end %>
 
   <div class="field">
-    <%= f.label :name %><br />
+    <%= f.label :Project %><br />
     <%= f.text_field :name %>
   </div>
 
-  <% for task in @project.tasks %>
-<<<<<<< HEAD
-=======
-    <%# This is wrong %>
-    <%#= f.fields_for "project[task_attributes][]" , task do |task_form| %>
-
-    <%# rights was are: %>
-    <%#= f.fields_for "task_attributes[]" , task do |task_form| %>
-    <%#= fields_for "project[task_attributes][]" , task do |task_form| %>
-    <%# choose any of them %>
->>>>>>> f98a84a918fe72bbc52296741a419616787147e3
-    <%= fields_for "project[task_attributes][]" , task do |task_form| %>
-      <p>
-        Task: <%= task_form.text_field :name %>
-      </p>
-    <% end %>
-  <% end %>
-
+  
+   <%= f.fields_for :tasks do |form_task| %>
+     Task: <%= form_task.text_field :name %>
+     <%= form_task.link_to_remove "Remove this task" %>
+   <% end %>
+   
+   <%= f.link_to_add "Add a task" ,:tasks %>
+   
   <div class="actions">
     <%= f.submit %>
   </div>
+
 <% end %>
+
+
+
+
+

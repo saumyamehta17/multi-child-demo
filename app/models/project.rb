@@ -1,32 +1,10 @@
 class Project < ActiveRecord::Base
-<<<<<<< HEAD
-  attr_accessible :name,:task_attributes
-=======
-  attr_accessible :name, :task_attributes
->>>>>>> f98a84a918fe72bbc52296741a419616787147e3
-  has_many :tasks
 
-  def task_attributes=(task_attributes)
-    #  task_attributes
-    #=> {"4"=>{"name"=>"eee"}, "5"=>{"name"=>"zzz"}, "6"=>{"name"=>""}}
-    # Its a hash, but when you loop it throught each the you should pass two arguments like:
-    # task_attributes.each do |id, attr|
-    #
-    # but as you are using only one argument then ruby make the key valye pair an array like:
-    #
-    # task_attributes.each {|e| puts e }
-    # =>
-    # ["4", {"name"=>"eee"}]
-    # ["5", {"name"=>"zzz"}]
-    # ["6", {"name"=>""}]
-    #
-    # this is the real output, you can see what it was initially and what you made it by defining
-    # each with single arguments
-    # dhyan rekha ker werna errors aate rahenge or tuje samajh b ne aayega or time lagta rahega tera
+  attr_accessible :name,:tasks_attributes
 
-    task_attributes.each do |attr|
-      self.tasks.build(attr)
-    end
-  end
+  has_many :tasks, :dependent => :destroy
+  accepts_nested_attributes_for :tasks , :allow_destroy => true ,
+    :reject_if => proc {|attr| attr['name'].blank? }
+  
 
 end
