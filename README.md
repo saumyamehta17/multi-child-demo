@@ -11,8 +11,6 @@ Setup steps
 Clone repository
 
 ```
-git clone 
-
 git clone https://github.com/sweetymehta/sm_rc73.git
 ```
 Go to app's folder
@@ -25,7 +23,7 @@ create scaffolding
 ```
 create association of many-to-one 
 ```
-#todo
+#todo...
 ```
 add new gem in gemfile
 ```
@@ -38,9 +36,10 @@ make changes in application.js file
 make changes in resource model
 ```
 add accepts_nested_model_attributes
+
+#todo...
 ```
-#todo
-```
+
 accepts_nested_form provide many options
 ```
 reject_if , allow_destroy , limit etc
