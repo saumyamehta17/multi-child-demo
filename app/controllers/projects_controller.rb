@@ -41,6 +41,7 @@ class ProjectsController < ApplicationController
   # POST /projects.json
   def create
     @tasks = params[:project][:task_attributes].map {|x| x[:name]}
+    update_add_task_attr(task_attr)
     #debugger
     @project = Project.new(params[:project])
 
@@ -84,6 +85,7 @@ class ProjectsController < ApplicationController
 
   def newtask
      #debugger
+    #@project =   Project.find(params[:id])
     respond_to do |format|
       format.js {}
     end

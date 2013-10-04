@@ -17,15 +17,33 @@
     <%= f.text_field :name %>
   </div>
 
+
+      <div id="tasks">
+      <%= fields_for "project[task_attributes][]", :task do |task_form| %>
+          <% for task in @project.tasks  %>
+                <%= render :partial => "task" %>
+
+          <% end %>
+      <% end %>
   
    <%#= f.fields_for :tasks do |form_task| %>
      <%#= form_task.text_field :name %>
      <%#= form_task.link_to_remove "Remove this task" %>
    <%# end %>
    
-    <div id="tasks">
-    <%# for task in @project.tasks  %>
-        <%= render :partial =>  "task" ,:collection => @project.tasks %>
+
+      <%#= fields_for "project[task_attributes][]" , :task do |task_form| %>
+        <%# for task in @project.tasks  %>
+
+              <!--<p>-->
+                 <%#= task_form.text_field :name %>
+              <!--</p>-->
+          <%# end %>
+
+
+
+
+      <%#= render :partial =>  "task" ,:collection => @project.tasks %>
     <%# end %>
     </div>
 

@@ -2,18 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="35974448-245d-4e83-97df-d957580164d7" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/projects/_form.html.erb" afterPath="$PROJECT_DIR$/app/views/projects/_form.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/projects/_task.html.erb" afterPath="$PROJECT_DIR$/app/views/projects/_task.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/projects/newtask.js.erb" afterPath="$PROJECT_DIR$/app/views/projects/newtask.js.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/project.rb" afterPath="$PROJECT_DIR$/app/models/project.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/projects_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/projects_controller.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="sm_rc73.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/Dummy.txt" changelist="35974448-245d-4e83-97df-d957580164d7" time="1380847970254" ignored="false" />
-    <file path="/projects_controller.rb" changelist="35974448-245d-4e83-97df-d957580164d7" time="1380855223414" ignored="false" />
-    <file path="/_form.html.erb" changelist="35974448-245d-4e83-97df-d957580164d7" time="1380855871206" ignored="false" />
-    <file path="/project.rb" changelist="35974448-245d-4e83-97df-d957580164d7" time="1380848900171" ignored="false" />
+    <file path="/projects_controller.rb" changelist="35974448-245d-4e83-97df-d957580164d7" time="1380856610622" ignored="false" />
+    <file path="/_form.html.erb" changelist="35974448-245d-4e83-97df-d957580164d7" time="1380858684504" ignored="false" />
+    <file path="/project.rb" changelist="35974448-245d-4e83-97df-d957580164d7" time="1380859559473" ignored="false" />
     <file path="/20131004021516_add_task1_and_task2_and_task3_and_task4_and_task5_to_projects.rb" changelist="35974448-245d-4e83-97df-d957580164d7" time="1380853021699" ignored="false" />
     <file path="/routes.rb" changelist="35974448-245d-4e83-97df-d957580164d7" time="1380855471383" ignored="false" />
-    <file path="/newtask.js.erb" changelist="35974448-245d-4e83-97df-d957580164d7" time="1380856017905" ignored="false" />
+    <file path="/newtask.js.erb" changelist="35974448-245d-4e83-97df-d957580164d7" time="1380859189399" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,19 +37,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="projects_controller.rb" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="projects_controller.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/controllers/projects_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="86" column="5" selection-start="2136" selection-end="2136" vertical-scroll-proportion="0.0">
+            <state line="62" column="90" selection-start="1530" selection-end="1530" vertical-scroll-proportion="0.67005074">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="README.md" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="README.md" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="51" column="0" selection-start="718" selection-end="718" vertical-scroll-proportion="0.84771574">
+            <state line="51" column="0" selection-start="718" selection-end="718" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -63,7 +67,7 @@
       <file leaf-file-name="_form.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/projects/_form.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="28" column="7" selection-start="778" selection-end="778" vertical-scroll-proportion="-16.25">
+            <state line="24" column="14" selection-start="666" selection-end="666" vertical-scroll-proportion="-11.25">
               <folding />
             </state>
           </provider>
@@ -72,7 +76,7 @@
       <file leaf-file-name="_task.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/projects/_task.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
+            <state line="2" column="4" selection-start="73" selection-end="73" vertical-scroll-proportion="-1.25">
               <folding />
             </state>
           </provider>
@@ -90,7 +94,7 @@
       <file leaf-file-name="newtask.js.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/projects/newtask.js.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="0" selection-start="60" selection-end="60" vertical-scroll-proportion="-0.625">
+            <state line="0" column="25" selection-start="25" selection-end="25" vertical-scroll-proportion="-0.0">
               <folding />
             </state>
           </provider>
@@ -108,7 +112,7 @@
       <file leaf-file-name="project.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/models/project.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="2" selection-start="234" selection-end="234" vertical-scroll-proportion="0.0">
+            <state line="15" column="38" selection-start="366" selection-end="397" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -144,13 +148,14 @@
         <option value="$PROJECT_DIR$/Gemfile" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/application.js" />
         <option value="$PROJECT_DIR$/app/models/task.rb" />
-        <option value="$PROJECT_DIR$/app/models/project.rb" />
         <option value="$PROJECT_DIR$/db/migrate/20131004021516_add_task1_and_task2_and_task3_and_task4_and_task5_to_projects.rb" />
         <option value="$PROJECT_DIR$/config/routes.rb" />
+        <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/app/views/projects/_task.html.erb" />
         <option value="$PROJECT_DIR$/app/views/projects/_form.html.erb" />
         <option value="$PROJECT_DIR$/app/views/projects/newtask.js.erb" />
+        <option value="$PROJECT_DIR$/app/models/project.rb" />
         <option value="$PROJECT_DIR$/app/controllers/projects_controller.rb" />
-        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -409,6 +414,13 @@
       <RTEST_RUN_CONFIG_SETTINGS_ID NAME="RUNNER_OPTIONS" VALUE="" />
       <method />
     </configuration>
+    <configuration default="true" type="JavascriptDebugSession" factoryName="Remote" singleton="true">
+      <JSRemoteDebuggerConfigurationSettings>
+        <option name="engineId" />
+        <option name="fileUrl" />
+      </JSRemoteDebuggerConfigurationSettings>
+      <method />
+    </configuration>
     <configuration default="false" name="test" type="RakeRunConfigurationType" factoryName="Rake">
       <module name="sm_rc73" />
       <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
@@ -663,20 +675,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/project.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="2" selection-start="234" selection-end="234" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/db/migrate/20130603140346_create_projects.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="21" selection-start="64" selection-end="114" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/db/migrate/20131004021516_add_task1_and_task2_and_task3_and_task4_and_task5_to_projects.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="3" column="32" selection-start="170" selection-end="170" vertical-scroll-proportion="0.0">
@@ -691,37 +689,51 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="51" column="0" selection-start="718" selection-end="718" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/migrate/20130603140346_create_projects.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="21" selection-start="64" selection-end="114" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/projects/_task.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+        <state line="2" column="4" selection-start="73" selection-end="73" vertical-scroll-proportion="-1.25">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/projects/_form.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="7" selection-start="778" selection-end="778" vertical-scroll-proportion="-16.25">
+        <state line="24" column="14" selection-start="666" selection-end="666" vertical-scroll-proportion="-11.25">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/projects/newtask.js.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="0" selection-start="60" selection-end="60" vertical-scroll-proportion="-0.625">
+        <state line="0" column="25" selection-start="25" selection-end="25" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/project.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="38" selection-start="366" selection-end="397" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/projects_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="86" column="5" selection-start="2136" selection-end="2136" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="51" column="0" selection-start="718" selection-end="718" vertical-scroll-proportion="0.84771574">
+        <state line="62" column="90" selection-start="1530" selection-end="1530" vertical-scroll-proportion="0.67005074">
           <folding />
         </state>
       </provider>

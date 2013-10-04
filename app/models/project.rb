@@ -12,6 +12,13 @@ class Project < ActiveRecord::Base
   end
   #accepts_nested_attributes_for :tasks , :allow_destroy => true ,
   #  :reject_if => proc {|attr| attr['name'].blank? }
-  
+
+  def update_add_task_attr(task_attr)
+
+
+
+  end
+  #params[:project][:task_attributes].each_with_index i
+  #  send "task#{i+1}=", x[:name]
 
 end
