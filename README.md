@@ -1,5 +1,4 @@
-SM RailsCast 73,74,75
-===============
+
 
 How to use multiple models in single form...
 
@@ -48,7 +47,5 @@ Run `server`
 ```
 rails s 
 ```
-
-
 
 
