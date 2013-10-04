@@ -1,4 +1,5 @@
-<%= nested_form_for(@project) do |f| %>
+<div id="project">
+<%= form_for(@project) do |f| %>
   <% if @project.errors.any? %>
     <div id="error_explanation">
       <h2><%= pluralize(@project.errors.count, "error") %> prohibited  this project from being saved:</h2>
@@ -17,18 +18,25 @@
   </div>
 
   
-   <%= f.fields_for :tasks do |form_task| %>
-     Task: <%= form_task.text_field :name %>
-     <%= form_task.link_to_remove "Remove this task" %>
-   <% end %>
+   <%#= f.fields_for :tasks do |form_task| %>
+     <%#= form_task.text_field :name %>
+     <%#= form_task.link_to_remove "Remove this task" %>
+   <%# end %>
    
-   <%= f.link_to_add "Add a task" ,:tasks %>
-   
+    <div id="tasks">
+    <%# for task in @project.tasks  %>
+        <%= render :partial =>  "task" ,:collection => @project.tasks %>
+    <%# end %>
+    </div>
+
+    <%= link_to "add new task" ,:action => :newtask, :method => :get,   :remote => true  %>
+
   <div class="actions">
     <%= f.submit %>
   </div>
 
 <% end %>
+</div>
 
 
 

@@ -1,6 +1,6 @@
 SmRc73::Application.routes.draw do
   resources :projects
-
+  get "newtask" => "projects#newtask"
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

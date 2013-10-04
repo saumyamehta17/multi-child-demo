@@ -40,7 +40,10 @@ class ProjectsController < ApplicationController
   # POST /projects
   # POST /projects.json
   def create
+    @tasks = params[:project][:task_attributes].map {|x| x[:name]}
+    #debugger
     @project = Project.new(params[:project])
+
     respond_to do |format|
       if @project.save
         format.html { redirect_to @project, notice: 'Project was successfully created.' }
@@ -78,4 +81,12 @@ class ProjectsController < ApplicationController
       format.json { head :no_content }
     end
   end
+
+  def newtask
+     #debugger
+    respond_to do |format|
+      format.js {}
+    end
+  end
+
 end

@@ -6,7 +6,7 @@ gem 'rails', '3.2.13'
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
 gem 'sqlite3'
-gem 'prototype-rails'
+  # gem 'prototype-rails'
 
 # Gems used only for assets and not required
 # in production environments by default.
@@ -23,7 +23,7 @@ end
 gem 'jquery-rails'
 gem 'quiet_assets' , :group => [:development]
 gem 'thin'
-gem 'nested_form'
+#gem 'nested_form'
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
 
